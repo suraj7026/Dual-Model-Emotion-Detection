@@ -23,7 +23,6 @@ This project implements a dual-modal emotion detection system that recognizes a 
   * [Text Emotion Classifier](#text-emotion-classifier)
   * [Audio Emotion Classifier](#audio-emotion-classifier)
 * [Training and Evaluation](#training-and-evaluation)
-* [Usage](#usage)
 * [Project Structure](#project-structure)
 * [Results](#results)
 * [Future Work](#future-work)
@@ -113,23 +112,6 @@ pip install -r requirements.txt
 4. Evaluate on test set: accuracy, classification report, confusion matrix.
 5. Visualize results with heatmaps.
 
-## Usage
-
-```bash
-# Text-based inference
-python predict_text_emotion.py --model text_model.h5 --tokenizer bert-tokenizer.zip
-
-# Audio-based inference
-python predict_audio_emotion.py --model audio_model.h5 --wav2vec_tokenizer wav2vec.zip
-```
-
-Interactive demo:
-
-```python
-from emotion_pipeline import EmotionPipeline
-pipeline = EmotionPipeline(text_model='text_model.h5', audio_model='audio_model.h5')
-pipeline.predict_from_audio('sample.wav')
-```
 
 ## Project Structure
 
